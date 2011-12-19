@@ -32,11 +32,17 @@ Create a story
 ```
 		
 Complete sample
+
 1. create a project
+
 2. create a story
+
 3. add a note
+
 4. add an attachment
+
 5. start a story
+
 6. then retrieves all stories in started state
 	
 ```csharp	
