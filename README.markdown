@@ -13,19 +13,25 @@ First create the Pivotal Tracker Facade
 
 List all stories
 
+```csharp
 	Pivotal.Projects().Get(123456).Stories().All().Each(s=>Console.WriteLine("{0} : {1}", s.Name, s.Description));
+```	
 	
 List some stories
 	
+```csharp	
 	var stories = Pivotal.Projects().Get(123456).Stories().Filter("label:ui state:delivered");
+```
 	
 Create a story
-
+	
+```csharp	
 	Pivotal.Projects().Get(123456).Stories()
 		.Create()
 			  .SetName("Hello World")
 			  .SetType(StoryTypeEnum.Bug)
 		.Save();
+```
 		
 Complete sample
 create a project
@@ -34,7 +40,8 @@ add a note
 add an attachment
 start a story
 then retrieves all stories in started state
-
+	
+```csharp	
 	byte[] someBytes = System.Text.Encoding.ASCII.GetBytes("Hello World"); //Some bytes
 	Pivotal
 		.Projects()
@@ -72,5 +79,6 @@ then retrieves all stories in started state
 			.Done()
 		.Done()
 	.Done();
+```
 
 There is many other methods. Just download the code and let's follow the Fluent API :)
