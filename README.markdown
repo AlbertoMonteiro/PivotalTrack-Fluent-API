@@ -32,12 +32,12 @@ Create a story
 ```
 		
 Complete sample
-create a project
-create a story
-add a note
-add an attachment
-start a story
-then retrieves all stories in started state
+1. create a project
+2. create a story
+3. add a note
+4. add an attachment
+5. start a story
+6. then retrieves all stories in started state
 	
 ```csharp	
 	byte[] someBytes = System.Text.Encoding.ASCII.GetBytes("Hello World"); //Some bytes
