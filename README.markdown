@@ -6,8 +6,10 @@ Pivotal Tracker FluentAPI is C# API that uses the Fluent pattern to connect to t
 
 First create the Pivotal Tracker Facade
 
+```csharp
 	var token = new Token("APIKEY"); //get a pivotal API key from your Profile
 	var Pivotal = new PivotalTrackerFacade(token);
+```
 
 List all stories
 
@@ -72,10 +74,3 @@ then retrieves all stories in started state
 	.Done();
 
 There is many other methods. Just download the code and let's follow the Fluent API :)
-
-# More informations
-
-1. [API Implementation Status](http://ptfluentapi.codeplex.com/wikipage?title=API%20Implementation%20Status&referringTitle=Home) can be consulted to see how far the API is implemented
-2. Developer Section give some coding notes about this project
-3. Mantis Migration Tool : a complete use case using PivotalTracker FluentAPI
-4. Pivotal Tracker Stories : to follow bugs, features, ...
