@@ -74,14 +74,15 @@ then retrieves all stories in started state
 	.Done();
 
 There is many other methods. Just download the code and let's follow the Fluent API :)
-More informations
+
+# More informations
 
 API Implementation Status can be consulted to see how far the API is implemented
 Developer Section give some coding notes about this project
 Mantis Migration Tool : a complete use case using PivotalTracker FluentAPI
 Pivotal Tracker Stories : to follow bugs, features, ...
 
-Follow the project
+# Follow the project
 
 Pivotal project activities
 Global codeplex activities
