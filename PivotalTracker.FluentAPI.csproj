@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F0D4B11-9007-4F93-BB36-81CF4F8BF42F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PivotalTracker.FluentAPI</RootNamespace>
+    <AssemblyName>PivotalTracker.FluentAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Attachment.cs" />
+    <Compile Include="Domain\Integration.cs" />
+    <Compile Include="Domain\Iteration.cs" />
+    <Compile Include="Domain\Membership.cs" />
+    <Compile Include="Domain\MembershipRoleEnum.cs" />
+    <Compile Include="Domain\Note.cs" />
+    <Compile Include="Domain\Person.cs" />
+    <Compile Include="Domain\Project.cs" />
+    <Compile Include="Domain\ProjectRef.cs" />
+    <Compile Include="Domain\Story.cs" />
+    <Compile Include="Domain\StoryStateEnum.cs" />
+    <Compile Include="Domain\StoryTypeEnum.cs" />
+    <Compile Include="Domain\Task.cs" />
+    <Compile Include="Domain\Token.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\DateTimeUTC.cs" />
+    <Compile Include="Repository\IPivotalTrackerRepository.cs" />
+    <Compile Include="Repository\PivotalAttachmentRepository.cs" />
+    <Compile Include="Repository\PivotalIterationRepository.cs" />
+    <Compile Include="Repository\PivotalMembershipsRepository.cs" />
+    <Compile Include="Repository\PivotalProjectRepository.cs" />
+    <Compile Include="Repository\PivotalStoryRepository.cs" />
+    <Compile Include="Repository\PivotalTaskRepository.cs" />
+    <Compile Include="Repository\PivotalTrackerRepositoryBase.cs" />
+    <Compile Include="Repository\FormUpload.cs" />
+    <Compile Include="Service\Facade.cs" />
+    <Compile Include="Service\FacadeBase.cs" />
+    <Compile Include="Service\FacadeItem.cs" />
+    <Compile Include="Service\IFacade.cs" />
+    <Compile Include="Service\IPivotalTrackerFacade.cs" />
+    <Compile Include="Service\IterationFacade.cs" />
+    <Compile Include="Service\IterationsFacade.cs" />
+    <Compile Include="Service\MembershipsFacade.cs" />
+    <Compile Include="Service\PivotalTrackerFacade.cs" />
+    <Compile Include="Service\ProjectCreateFacade.cs" />
+    <Compile Include="Service\ProjectFacade.cs" />
+    <Compile Include="Service\ProjectsFacade.cs" />
+    <Compile Include="Service\StoriesFacade.cs" />
+    <Compile Include="Service\StoriesProjectFacade.cs" />
+    <Compile Include="Service\StoryCreationFacade.cs" />
+    <Compile Include="Service\StoryFacade.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

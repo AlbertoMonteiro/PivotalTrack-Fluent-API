@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PivotalTracker.FluentAPI.Tests.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApiKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">XXXX</Value>
+    </Setting>
+    <Setting Name="TestProjectId" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="NewMemberName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">a real member name</Value>
+    </Setting>
+    <Setting Name="NewMemberEmail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">realemail@mydomain.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
