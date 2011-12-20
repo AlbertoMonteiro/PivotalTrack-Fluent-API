@@ -361,15 +361,6 @@ namespace PivotalTracker.FluentAPI.Tests
                                     .Delete();
         }
 
-        [TestMethod]
-        public void Vai()
-        {
-            Pivotal = new PivotalTrackerFacade(new Token("fb96184e8ec065197f8199c906a4d615"));
-
-            var projectFacade = Pivotal.Projects().FindProject(x => !string.IsNullOrWhiteSpace(x.Name));
-            Assert.AreEqual("Libra", projectFacade.Item.Name);
-        }
-
         #endregion
 
         #region AttachmentsTest
